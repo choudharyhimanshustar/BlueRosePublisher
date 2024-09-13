@@ -1,0 +1,36 @@
+nav
+{
+    background-color: black;
+    width: 20rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    display:flex;
+    gap:1.4rem;
+    border-radius: 2.5rem;
+    border: 1px solid rgb(75, 101, 189);
+    position: fixed;
+    left:38%;
+    top:85%;
+    justify-content: center;
+    z-index: 3;
+}
+
+nav a
+{
+    font-size: larger;
+    padding: 0.5rem;
+}
+
+nav a.active
+{
+       color:whitesmoke;
+}
+
+@media screen and (max-width:640px) {
+    nav
+    {
+        position: fixed;
+        left:5%;
+        top:75%; 
+    }
+}

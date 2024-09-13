@@ -1,0 +1,82 @@
+.Contacts_container
+{
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap:10%;
+}
+.handles
+{
+    display:grid;
+    grid-template-columns: 20%;
+    justify-content: left;
+    border: 1px solid var(--color-primary);
+    border-radius: 2.5rem;
+    width: fit-content;
+    padding: 7%;
+    margin-left: 5rem;
+    background-color: var(--color-primary);
+    margin-top: 1rem;
+}
+
+.icons
+{
+    position: relative;
+    left:200%;
+    font-size: larger;
+}
+
+
+form
+{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    justify-content: center;
+    width: 80%;
+    margin-top: 7%;
+    border: 1px solid white;
+    padding: 3%;
+    border-radius: 2.5rem;
+}
+
+form input, textarea
+{
+    border: 1px solid var(--color-primary);
+    border-radius:1rem;
+    padding:3%;
+    background:transparent;
+    color:white;
+}
+
+.key
+{
+    width:30%;
+    border: 1px solid var(--color-primary);
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    background: transparent;
+    color: grey;
+    height: 15%;
+
+}
+
+@media screen and (max-width:640px) {
+    .Contacts_container
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+    form
+    {
+        margin-left: 5%;
+        padding: 5%;
+    }
+    .key
+    {
+        width:40%;
+        position: relative;
+        left:30%;
+    }
+}

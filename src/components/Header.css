@@ -1,0 +1,55 @@
+header {
+  height: 80vh;
+  padding: 0.6rem;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.header_container {
+  
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 4rem;
+  top: 12rem;
+  justify-content: center;
+}
+
+.cv {
+  position: relative;
+  left:43vw;
+}
+
+.profile_img
+{
+  width:10%;
+  border-radius: 25%;
+}
+@media screen and (max-width: 640px) {
+    
+    .cv
+    {
+        position: relative;
+        left: 20vw;
+    }
+    .heading
+    {
+        position: absolute;
+        left: 10vw;
+        justify-content:center;
+        text-align:center;
+    }
+    .socials
+    {
+        position: absolute;
+        top: 20rem;
+        left:2rem;
+    }
+    
+
+}
+

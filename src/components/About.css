@@ -1,0 +1,97 @@
+.about_me {
+  border-radius: 2.5rem;
+  width: 17rem;
+  aspect-ratio: 1/1;
+  opacity: 75%;
+  position: relative;
+  left: 25%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.795),
+    transparent
+  );
+}
+.about_image {
+  width: 17rem;
+  border-radius: 2.5rem;
+  transform: rotate(10deg);
+}
+
+.about_image:hover {
+  transform: rotate(0deg);
+  transition: var(--transistion);
+}
+
+.about_icons {
+  font-size: larger;
+}
+
+.about_container {
+  display: grid; /* An HTML element becomes a grid container when its display property is set to grid */
+  grid-template-columns: 35% 50%; /* The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. */
+  gap: 5%;
+}
+
+.about_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  gap: 7rem;
+}
+
+.cards {
+  background: var(--color-primary);
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
+  padding: 2rem;
+  height: 8rem;
+  aspect-ratio: 1/1;
+}
+
+.cards:hover {
+  background-color: rgb(146, 128, 212);
+  transition: var(--transistion);
+}
+
+p {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  margin-top: 1rem;
+  background-color: var(--color-primary);
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
+  padding: 1rem;
+}
+
+p:hover {
+  background-color: rgb(146, 128, 212);
+  transition: var(--transistion);
+}
+
+@media screen and (max-width: 640px) {
+  .about_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_me {
+    background: none;
+    position: relative;
+    left: 15%;
+  }
+  .about_image {
+    transform: rotate(0deg);
+  }
+  .about_cards {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    position: relative;
+    left: 25%;
+  }
+  p {
+    width: 55%;
+    position: relative;
+    left: 20%;
+  }
+}
